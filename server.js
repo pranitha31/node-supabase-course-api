@@ -1,10 +1,11 @@
-const express =require("express");
 const dotenv =require("dotenv");
+
+dotenv.config();
+const express =require("express");
 const courseRouter =require("./routes/courses");
 const logger =require("./middleware/logger");
 
 
-dotenv.config();
 const app =express();
 
 app.use(express.json());

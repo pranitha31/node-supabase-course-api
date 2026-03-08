@@ -15,7 +15,7 @@ router.get("/", async(req,res)=>{
 
 //entroll  a student
 const enrollStudent=[
-    ValidateEntrollment,
+    validateEntrollment,
     async (req,res)=>{
         const {
             student_name,course_id
